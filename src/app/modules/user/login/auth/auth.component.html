@@ -1,0 +1,31 @@
+<div class="container">
+    <div _nghost-c1>
+          <div _ngcontent-c1 class="m-grid__item m-grid__item--fluid m-grid m-grid--desktop m-grid--ver-desktop m-grid--hor-tablet-and-mobile m-login m-login--6">
+              <mat-card style="height: 320px; width: 400px; border: transparent; background: transparent">
+                  <div class="row h-200 justify-content-center align-items-center " style="padding-top: 20px;">
+                    <span class="title-2">Login Account</span>
+                  </div>
+                  <form class="loginform" name="loginForm">
+                    <div class="example-container">
+                      <mat-form-field>
+                          <input matInput placeholder="Username" [formControl]="userid" required >
+                          <!-- <mat-error *ngIf="userid.invalid">{{getLoginIDErrorMessage()}}</mat-error> -->
+                      </mat-form-field>
+                      <mat-form-field>
+                          <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'" [formControl]="password" required>
+                        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        <!-- <mat-error *ngIf="password.invalid">{{getPasswordErrorMessage()}}</mat-error> -->
+                      </mat-form-field>
+                    </div>
+                    <div class="row h-200 justify-content-center align-items-center " style="padding-top: 20px;">
+                        <button mat-raised-button color="primary" (click)="submitClick()"
+                        id="btnsubmit">Sign In</button>
+                      </div>
+                      <div class="row h-200 justify-content-center align-items-center" style="padding-top: 20px;">
+                          <label textWrap="true" style="color:red;">{{loginErrorText}}</label>
+                        </div>
+                  </form>
+                </mat-card>
+            </div>
+    </div>
+    </div>  

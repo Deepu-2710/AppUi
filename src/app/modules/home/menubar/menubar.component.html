@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="row" style="margin: 20px;">
+      <div class="col" style="width: 150px;">
+          <button mat-icon-button [matMenuTriggerFor]="activity" style="outline: none;">
+              <mat-icon>perm_identity</mat-icon>
+              <span style="margin-left: 10px; color: rgb(189, 182, 182);">Activity</span>
+              <mat-icon>expand_more</mat-icon>
+            </button>
+
+            <mat-menu #activity="matMenu">
+                <button mat-menu-item [matMenuTriggerFor]="user" style="outline: none;">
+                  <mat-icon>perm_identity</mat-icon>
+                  <span style="margin-left: 10px; color: rgb(189, 182, 182);">User</span>
+                </button>
+                <button mat-menu-item [matMenuTriggerFor]="customer" style="outline: none;">
+                  <mat-icon>face</mat-icon>
+                  <span style="margin-left: 10px; color: rgb(189, 182, 182);">Customer</span>
+                </button>
+                <button mat-menu-item [matMenuTriggerFor]="lab" style="outline: none;">
+                    <mat-icon>touch_app</mat-icon>
+                    <span style="margin-left: 10px; color: rgb(189, 182, 182);">Lab</span>
+                  </button>
+              </mat-menu>
+
+            <mat-menu #user="matMenu">
+              <button mat-menu-item style="outline: none;">
+                <mat-icon>people_outline</mat-icon>
+                <span style="margin-left: 10px; color: rgb(189, 182, 182);">All Users</span>
+              </button>
+              <button mat-menu-item style="outline: none;">
+                <mat-icon>description</mat-icon>
+                <span style="margin-left: 10px; color: rgb(189, 182, 182);">User Profile</span>
+              </button>
+            </mat-menu>
+
+            <mat-menu #customer="matMenu">
+                <button mat-menu-item style="outline: none;">
+                  <mat-icon>description</mat-icon>
+                  <span style="margin-left: 10px; color: rgb(189, 182, 182);">Register Customer</span>
+                </button>
+                <button mat-menu-item style="outline: none;">
+                  <mat-icon>people_outline</mat-icon>
+                  <span style="margin-left: 10px; color: rgb(189, 182, 182);">All Customers</span>
+                </button>
+              </mat-menu>
+      </div>
+      <div class="col" style="width: 150px; margin-left: 25px;">
+          <button mat-icon-button [matMenuTriggerFor]="menu" style="outline: none;">
+              <mat-icon>assignment</mat-icon>
+              <span style="margin-left: 10px; color: rgb(189, 182, 182);">Reports</span>
+              <mat-icon>expand_more</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+              <button mat-menu-item style="outline: none;">
+                <mat-icon>event</mat-icon>
+                <span style="margin-left: 10px; color: rgb(189, 182, 182);">Lab Reports</span>
+              </button>
+              <!-- <button mat-menu-item disabled style="outline: none;">
+                <mat-icon>voicemail</mat-icon>
+                <span>Check voicemail</span>
+              </button> -->
+              <!-- <button mat-menu-item style="outline: none;">
+                <mat-icon>description</mat-icon>
+                <span>User Profile</span>
+              </button> -->
+            </mat-menu>
+      </div>
+    </div>
+</div>
+

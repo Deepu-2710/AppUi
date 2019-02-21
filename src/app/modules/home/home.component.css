@@ -1,0 +1,19 @@
+.hosting-container
+{
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-column
+{
+    width: 16vw;
+    height: 100vh;
+    background: rgb(80, 78, 78);
+}
+
+.right-column
+{
+    width: 80vw;
+    height: 100vh;
+}
